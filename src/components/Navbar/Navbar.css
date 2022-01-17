@@ -5,3 +5,9 @@
     justify-content: center;
     align-items: center;
 }
+.navbar-logo{
+    color: #ffff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
