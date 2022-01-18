@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import { MenuItems } from "./MenuItems";
 import './Navbar.css'
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 const Navbar = () => {
   const [clicked, setClicked] = useState(false)
   const handleClick = () => setClicked(!clicked)
@@ -8,15 +11,17 @@ const Navbar = () => {
     <nav className="NavbarItems">
       <h1 className="navbar-logo">Stephen</h1>
       <div className="menu-icon" onClick = {handleClick}>
-         <i className={clicked ? 'fas fa-times': 'fas fa-bars'}></i>
+         {clicked ? <CloseIcon /> : <MenuIcon />}
 
       </div>
       <ul>
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a className={item.cName} href={item.url}></a>
-              {item.title}
+              <a className={item.cName} href={item.url}>
+              {item.title}  
+              </a>
+             
             </li>
           );
         })}
