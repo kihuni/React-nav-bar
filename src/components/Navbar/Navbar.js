@@ -14,7 +14,7 @@ const Navbar = () => {
          {clicked ? <CloseIcon /> : <MenuIcon />}
 
       </div>
-      <ul className={clicked ? 'menu-bar active' : 'menu-bar'}>
+      <ul className={clicked ? 'nav-menu.active' : 'nav-menu'}>
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
@@ -26,7 +26,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <Button>Sign up</Button>
+      
     </nav>
   );
 };

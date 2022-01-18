@@ -8,9 +8,9 @@ const SIZES = ["btn--medium", "btn--large"];
 export const Button = ({
   children,
   type,
+  onClick,
   buttonStyle,
   buttonSize,
-  onClick,
 }) => {
   const checkButtonStyle = STYLES.include(buttonStyle)
     ? buttonStyle
