@@ -3,7 +3,7 @@ import { MenuItems } from "./MenuItems";
 import './Navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-
+import { Button } from '../Button';
 const Navbar = () => {
   const [clicked, setClicked] = useState(false)
   const handleClick = () => setClicked(!clicked)
@@ -26,6 +26,7 @@ const Navbar = () => {
           );
         })}
       </ul>
+      <Button>Sign up</Button>
     </nav>
   );
 };
