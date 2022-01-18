@@ -11,3 +11,16 @@
     margin-left: 20px;
     cursor: pointer;
 }
+.menu-bar{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    list-style: none;
+    justify-content: end;
+    text-align: center;
+    width: 70vh;
+    margin-right: 2em;
+}
+.nav-link{
+    text-decoration: none;
+}

@@ -14,7 +14,7 @@ const Navbar = () => {
          {clicked ? <CloseIcon /> : <MenuIcon />}
 
       </div>
-      <ul>
+      <ul className={clicked ? 'menu-bar active' : 'menu-bar'}>
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
